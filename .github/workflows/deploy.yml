@@ -18,7 +18,7 @@ jobs:
           node-version: 16
           cache: yarn
       - name: Install dependencies terser
-        run: npm install yarn terser@3.14 -g
+        run: yarn add terser@3.14 -g
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
